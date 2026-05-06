@@ -15,11 +15,11 @@ Copy this file to <code style="color:#111827;background:#ddd6fe;padding:2px 4px;
 
 | Field | Value |
 |---|---|
-| Name | TODO |
-| Roll Number | TODO |
-| GitHub Repository URL | TODO |
-| Resource Group | `rg-sp26-TODO` |
-| Assigned Region | TODO: `uaenorth` or `ukwest` |
+| Name | Affan Khalid |
+| Roll Number | 27100104 |
+| GitHub Repository URL | https://github.com/AffanKhalid06/CS487-PA4.git |
+| Resource Group | `rg-sp26-|
+| Assigned Region | `ukwest` |
 
 ## Evidence Rules
 
@@ -34,27 +34,36 @@ Copy this file to <code style="color:#111827;background:#ddd6fe;padding:2px 4px;
 
 ### Evidence 1.1: Forked Repository
 
-TODO: Embed screenshot of your forked GitHub repository.
+Embed screenshot of your forked GitHub repository.
+![Forked Repo](<./docs/1.1.png>)
 
-Description: TODO: Explain that this is your working fork and that it contains the PA4 starter structure.
+Description: My working fork-ed repository from github which contains the starter code for PA4 components. Check the repo's URL and 'forked from' link under the repos name to verify that this is a forked repo.
 
 ### Evidence 1.2: App Service Overview
 
-TODO: Embed screenshot of the Web App overview page showing `webapp-<rollnum>` and Running status.
+Embed screenshot of the Web App overview page showing `webapp-<rollnum>` and Running status.
+![WebApp Overview](<./docs/1.2.png>)
 
-Description: TODO: State the resource group, region, runtime, and public URL.
+Description: State the resource group, region, runtime, and public URL.
 
 ### Evidence 1.3: Deployment Center / GitHub Actions
 
-TODO: Embed screenshot of Deployment Center or the successful GitHub Actions deployment.
+Embed screenshot of Deployment Center or the successful GitHub Actions deployment.
+![Deployment Center](<./docs/1.3.png>)
 
-Description: TODO: Explain how the Web App is connected to your GitHub fork.
+Description: Explain how the Web App is connected to your GitHub fork.
 
 ### Evidence 1.4: Live Web UI
 
-TODO: Embed screenshot of the TaskFlow page loaded in a browser.
+Embed screenshot of the TaskFlow page loaded in a browser.
+![](<./docs/1.4.png>)
 
-Description: TODO: Explain that the App Service is serving the frontend successfully.
+Description: Explain that the App Service is serving the frontend successfully.
+
+### Evidence 1.5: Application Srttings
+
+Embed screenshot of the Application settings configured.
+![](<./docs/1.5.png>)
 
 ---
 
@@ -62,21 +71,38 @@ Description: TODO: Explain that the App Service is serving the frontend successf
 
 ### Evidence 2.1: ACR Overview
 
-TODO: Embed screenshot of `crpa4<rollnum>` overview.
+Embed screenshot of `crpa4<rollnum>` overview.
+![ACR](<./docs/2.1.png>)
 
-Description: TODO: Identify the registry SKU and resource group.
+Description: Identify the registry SKU and resource group.
 
 ### Evidence 2.2: Docker Builds
 
-TODO: Embed screenshot showing successful local builds for `validate-api`, `report-job`, and `func-app`.
+Embed screenshot showing successful local builds for `validate-api`, `report-job`, and `func-app`.
+![ReportJob/Validator build](<./docs/2.2.1.png>)
+![ReportJob/Validator build](<./docs/2.2.2.png>)
 
-Description: TODO: Explain which folder produced each image.
+Description: Explain which folder produced each image.
 
 ### Evidence 2.3: ACR Repositories
 
-TODO: Embed screenshot or CLI output showing all three repositories in ACR.
+Embed screenshot of local test of validator (curl output showing valid/invalid responses).
+![](<./docs/2.3.png>)
 
-Description: TODO: Confirm `validate-api:v1`, `report-job:v1`, and `func-app:v1` were pushed.
+### Evidence 2.4: Successful Push to ACR
+
+Embed screenshot of successfull pushes to ACR for all three images
+![](<./docs/2.4.png>)
+
+### Evidence 2.5: ACR Repositories
+
+Embed screenshot or CLI output showing all three repositories in ACR.
+![](<./docs/2.5.1.png>)
+![](<./docs/2.5.2.png>)
+![](<./docs/2.5.3.png>)
+
+Description: Confirm `validate-api:v1`, `report-job:v1`, and `func-app:v1` were pushed.
+
 
 ---
 
@@ -84,15 +110,17 @@ Description: TODO: Confirm `validate-api:v1`, `report-job:v1`, and `func-app:v1`
 
 ### Evidence 3.1: Completed Function Code
 
-TODO: Link to your completed file: `[function_app.py](function-app/function_app.py)`.
+Link to your completed file: `[function_app.py](function-app/function_app.py)`.
+![](<./docs/1..png>)
 
-Description: TODO: Summarize how your orchestrator chains validation and report generation.
+Description: Summarize how your orchestrator chains validation and report generation.
 
 ### Evidence 3.2: Local Function Handler Listing
 
-TODO: Embed screenshot of `func start` showing the HTTP starter, orchestrator, and activities.
+Embed screenshot of `func start` showing the HTTP starter, orchestrator, and activities.
+![](<./docs/1..png>)
 
-Description: TODO: Explain that the Durable Functions runtime discovered your handlers.
+Description: Explain that the Durable Functions runtime discovered your handlers.
 
 ---
 
@@ -100,21 +128,24 @@ Description: TODO: Explain that the Durable Functions runtime discovered your ha
 
 ### Evidence 4.1: Function App Container Configuration
 
-TODO: Embed screenshot showing the Function App uses your `func-app:v1` image from ACR.
+Embed screenshot showing the Function App uses your `func-app:v1` image from ACR.
+![](<./docs/1..png>)
 
-Description: TODO: State the Function App name and image URI.
+Description: State the Function App name and image URI.
 
 ### Evidence 4.2: Orchestration Smoke Test
 
-TODO: Embed screenshot of the `curl` output that starts an orchestration and returns status URLs.
+Embed screenshot of the `curl` output that starts an orchestration and returns status URLs.
+![](<./docs/1..png>)
 
-Description: TODO: Explain what the returned `id` and `statusQueryGetUri` prove.
+Description: Explain what the returned `id` and `statusQueryGetUri` prove.
 
 ### Evidence 4.3: Expected Failed Status Before Downstream Wiring
 
-TODO: Embed screenshot of the status query JSON showing the expected failure before `VALIDATE_URL` is configured.
+Embed screenshot of the status query JSON showing the expected failure before `VALIDATE_URL` is configured.
+![](<./docs/1..png>)
 
-Description: TODO: Explain why this failure is expected at this stage.
+Description: Explain why this failure is expected at this stage.
 
 ---
 
@@ -122,39 +153,45 @@ Description: TODO: Explain why this failure is expected at this stage.
 
 ### Evidence 5.1: AKS Cluster
 
-TODO: Embed screenshot of AKS overview showing `aks-<rollnum>` succeeded.
+Embed screenshot of AKS overview showing `aks-<rollnum>` succeeded.
+![](<./docs/1..png>)
 
-Description: TODO: State node count, node size, region, and resource group.
+Description: State node count, node size, region, and resource group.
 
 ### Evidence 5.2: Kubernetes Nodes and Pods
 
-TODO: Embed screenshot of `kubectl get nodes` and `kubectl get pods`.
+Embed screenshot of `kubectl get nodes` and `kubectl get pods`.
+![](<./docs/1..png>)
 
-Description: TODO: Explain that the validator pod is scheduled and running.
+Description: Explain that the validator pod is scheduled and running.
 
 ### Evidence 5.3: Kubernetes Service
 
-TODO: Embed screenshot of `kubectl get service validate-service`.
+Embed screenshot of `kubectl get service validate-service`.
+![](<./docs/1..png>)
 
-Description: TODO: Identify the external IP and port exposed by the LoadBalancer.
+Description: Identify the external IP and port exposed by the LoadBalancer.
 
 ### Evidence 5.4: Validator API Tests
 
-TODO: Embed screenshot of `curl /health`, a valid `curl /validate`, and an invalid `curl /validate`.
+Embed screenshot of `curl /health`, a valid `curl /validate`, and an invalid `curl /validate`.
+![](<./docs/1..png>)
 
-Description: TODO: Explain the accepted path and the `qty > 100` rejection rule.
+Description: Explain the accepted path and the `qty > 100` rejection rule.
 
 ### Evidence 5.5: Function App `VALIDATE_URL`
 
-TODO: Embed screenshot showing the Function App application setting `VALIDATE_URL`.
+Embed screenshot showing the Function App application setting `VALIDATE_URL`.
+![](<./docs/1..png>)
 
-Description: TODO: Explain how the Durable Function reaches the AKS validator.
+Description: Explain how the Durable Function reaches the AKS validator.
 
 ### Evidence 5.6: AKS Idle Behavior
 
-TODO: Embed AKS metrics screenshot and/or `kubectl` output after the service is idle.
+Embed AKS metrics screenshot and/or `kubectl` output after the service is idle.
+![](<./docs/1..png>)
 
-Description: TODO: Explain that the AKS node remains running even when there are no orders.
+Description: Explain that the AKS node remains running even when there are no orders.
 
 ---
 
@@ -162,39 +199,45 @@ Description: TODO: Explain that the AKS node remains running even when there are
 
 ### Evidence 6.1: Blob Container
 
-TODO: Embed screenshot of the `reports` blob container.
+Embed screenshot of the `reports` blob container.
+![](<./docs/1..png>)
 
-Description: TODO: Explain where generated PDFs are stored.
+Description: Explain where generated PDFs are stored.
 
 ### Evidence 6.2: Manual ACI Run
 
-TODO: Embed screenshot of `az container show` for `ci-report-test`.
+Embed screenshot of `az container show` for `ci-report-test`.
+![](<./docs/1..png>)
 
-Description: TODO: State the final container state and why the job exits.
+Description: State the final container state and why the job exits.
 
 ### Evidence 6.3: ACI Logs
 
-TODO: Embed screenshot of `az container logs`.
+Embed screenshot of `az container logs`.
+![](<./docs/1..png>)
 
-Description: TODO: Explain what the report job printed after generating and uploading the PDF.
+Description: Explain what the report job printed after generating and uploading the PDF.
 
 ### Evidence 6.4: Generated PDF
 
-TODO: Embed screenshot showing `TEST-001.pdf` in Blob Storage or opened from Blob Storage.
+Embed screenshot showing `TEST-001.pdf` in Blob Storage or opened from Blob Storage.
+![](<./docs/1..png>)
 
-Description: TODO: Explain how this proves the ACI wrote to storage.
+Description: Explain how this proves the ACI wrote to storage.
 
 ### Evidence 6.5: Function App Managed Identity and IAM
 
-TODO: Embed screenshots of system-assigned identity enabled and Contributor role assignment on your resource group.
+Embed screenshots of system-assigned identity enabled and Contributor role assignment on your resource group.
+![](<./docs/1..png>)
 
-Description: TODO: Explain why the Function App needs this permission to create ACIs.
+Description: Explain why the Function App needs this permission to create ACIs.
 
 ### Evidence 6.6: Report App Settings
 
-TODO: Embed screenshot of `REPORT_*`, `ACR_*`, `STORAGE_CONN`, and `SUBSCRIPTION_ID` settings.
+Embed screenshot of `REPORT_*`, `ACR_*`, `STORAGE_CONN`, and `SUBSCRIPTION_ID` settings.
+![](<./docs/1..png>)
 
-Description: TODO: Explain what each group of settings is used for. Mask secrets.
+Description: Explain what each group of settings is used for. Mask secrets.
 
 ---
 
@@ -202,27 +245,31 @@ Description: TODO: Explain what each group of settings is used for. Mask secrets
 
 ### Evidence 7.1: Web App Wiring
 
-TODO: Embed screenshot showing `FUNCTION_START_URL` and `FUNCTION_STATUS_URL` configured on the Web App.
+Embed screenshot showing `FUNCTION_START_URL` and `FUNCTION_STATUS_URL` configured on the Web App.
+![](<./docs/1..png>)
 
-Description: TODO: Explain how the frontend starts and polls the Durable orchestration.
+Description: Explain how the frontend starts and polls the Durable orchestration.
 
 ### Evidence 7.2: Happy Path UI
 
-TODO: Embed screenshots of the form before submit, Running status, and Completed status with report URL.
+Embed screenshots of the form before submit, Running status, and Completed status with report URL.
+![](<./docs/1..png>)
 
-Description: TODO: Explain the valid order payload and final result.
+Description: Explain the valid order payload and final result.
 
 ### Evidence 7.3: Backend Participation
 
-TODO: Embed screenshots showing Function App invocation, AKS validator evidence, ACI evidence, and Blob PDF evidence.
+Embed screenshots showing Function App invocation, AKS validator evidence, ACI evidence, and Blob PDF evidence.
+![](<./docs/1..png>)
 
-Description: TODO: Trace the same order ID across services.
+Description: Trace the same order ID across services.
 
 ### Evidence 7.4: Reject Path UI
 
-TODO: Embed screenshot of an order with `qty > 100` being rejected.
+Embed screenshot of an order with `qty > 100` being rejected.
+![](<./docs/1..png>)
 
-Description: TODO: Explain why no report ACI should be created for this order.
+Description: Explain why no report ACI should be created for this order.
 
 ---
 
@@ -230,30 +277,32 @@ Description: TODO: Explain why no report ACI should be created for this order.
 
 ### Evidence 8.1: Architecture Diagram
 
-TODO: Embed your architecture diagram from `docs/`.
+Embed your architecture diagram from `docs/`.
+![](<./docs/1..png>)
 
-Description: TODO: Confirm that it shows GitHub, App Service, Durable Function, AKS, ACI, Blob Storage, ACR, and IAM.
+Description: Confirm that it shows GitHub, App Service, Durable Function, AKS, ACI, Blob Storage, ACR, and IAM.
 
 ### Question 8.2: Service Selection
 
-TODO: In 3-4 sentences each, explain why TaskFlow uses App Service, Durable Functions, AKS, and ACI for their specific roles.
+In 3-4 sentences each, explain why TaskFlow uses App Service, Durable Functions, AKS, and ACI for their specific roles.
 
 ### Question 8.3: ACI vs AKS
 
-TODO: Compare idle behavior, cost behavior, and operational model for AKS and ACI using your screenshots.
+Compare idle behavior, cost behavior, and operational model for AKS and ACI using your screenshots.
 
 ### Question 8.4: Durable Functions vs Plain HTTP
 
-TODO: Explain at least two problems that Durable Functions solves for this sequential workflow.
+Explain at least two problems that Durable Functions solves for this sequential workflow.
 
 ### Question 8.5: Cost Review
 
-TODO: Embed Cost Management screenshot scoped to your resource group.
+Embed Cost Management screenshot scoped to your resource group.
+![](<./docs/1..png>)
 
-Description: TODO: Identify the most expensive resource and explain why.
+Description: Identify the most expensive resource and explain why.
 
 ### Question 8.6: Challenges Faced
 
-TODO: Describe at least two real issues you hit and how you debugged them.
+Describe at least two real issues you hit and how you debugged them.
 
 ---

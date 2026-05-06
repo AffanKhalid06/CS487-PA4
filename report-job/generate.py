@@ -3,6 +3,9 @@ from reportlab.pdfgen import canvas
 from azure.storage.blob import BlobServiceClient
 from azure.identity import ManagedIdentityCredential
 
+
+ # Read inputs from environment variables
+ # (injected by the report_activity SDK call)
 order_id   = os.environ["ORDER_ID"]
 order      = json.loads(os.environ["ORDER_JSON"])
 storage_url = os.environ["STORAGE_ACCOUNT_URL"]
