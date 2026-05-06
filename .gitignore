@@ -7,3 +7,11 @@ venv/
 .env
 local.settings.generated.json
 npm-debug.log*
+
+# Azurite local storage
+__azurite_db*
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+*.sh
+
